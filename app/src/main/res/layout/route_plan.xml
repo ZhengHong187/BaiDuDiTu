@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:onClick="searchButtonProcess"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:layout_gravity="left|center_vertical">
+        <Button
+            android:id="@+id/mass"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="跨城交通"
+            android:onClick="searchButtonProcess"
+            android:textColor="@drawable/btn_text_bg"
+            android:background="@drawable/btn_top_bg"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/drive"
+            android:layout_width="60dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="驾车"
+            android:onClick="searchButtonProcess"
+            android:textColor="@drawable/btn_text_bg"
+            android:background="@drawable/btn_top_bg"
+            />
+        <Button
+            android:id="@+id/transit"
+            android:layout_width="60dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="公交"
+            android:onClick="searchButtonProcess"
+            android:textColor="@drawable/btn_text_bg"
+            android:background="@drawable/btn_bg"
+            />
+        <Button
+            android:id="@+id/walk"
+            android:layout_width="60dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="步行"
+            android:onClick="searchButtonProcess"
+            android:textColor="@drawable/btn_text_bg"
+            android:background="@drawable/btn_bg"
+            />
+        <Button
+            android:id="@+id/bike"
+            android:layout_width="60dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="骑行"
+            android:onClick="searchButtonProcess"
+            android:textColor="@drawable/btn_text_bg"
+            android:background="@drawable/btn_bg"
+            />
+        <Button
+            android:id="@+id/details"
+            android:layout_width="60dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="详情"
+            android:onClick="searchButtonProcess"
+            android:textColor="@drawable/btn_text_bg"
+            android:background="@drawable/btn_bottom_bg"
+            />
+    </LinearLayout>
+
+
+
+    <com.lee.map01.utils.MyRecycleView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:scrollbars="none"
+        android:background="@color/white"
+        android:visibility="gone"/>
+
+</FrameLayout>

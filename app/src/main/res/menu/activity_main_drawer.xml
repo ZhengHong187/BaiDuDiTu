@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/jiayou"
+            android:title="加油"
+            />
+        <item
+            android:id="@+id/yiyuan"
+            android:title="医院"
+            />
+        <item
+            android:id="@+id/meishi"
+            android:title="美食"
+            />
+        <item
+            android:id="@+id/jiudian"
+            android:title="酒店"
+
+            />
+        <item
+            android:id="@+id/jingdian"
+            android:title="景点"
+
+            />
+
+    </group>
+    <group android:checkableBehavior="none"
+        android:id="@+id/group_manage">
+        <item
+            android:id="@+id/sousuo"
+            android:title="搜索"
+            />
+    </group>
+   <group
+       android:checkableBehavior="none"
+       android:id="@+id/group_settings">
+       <item android:id="@+id/nav_setting"
+           android:title="设置"/>
+       <item android:id="@+id/nav_suggestion"
+           android:title="意见反馈"/>
+       <item android:id="@+id/nav_about"
+           android:title="关于"/>
+
+   </group>
+</menu>
